@@ -111,5 +111,3 @@ BUTTON = Button(bg="#FF1493", bd=12, text="BMI", padx=33, pady=15, command=calcu
 BUTTON.grid(row=3, column=0, sticky=W)
 BUTTON.place(x=120, y=250)
 Screen.mainloop()
-
-#add name feature
