@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>To Do List</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+            <input type = "text" name="name" placeholder = "Activity">
+            <input type = "text" name="deadline" placeholder = "Deadline">
+            <button>Add Activity</button>
+            <button>Update</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCBBKSVknq1sohITnEsvztw_W6Id6ynO1Q",
+            authDomain: "to-do-list-748ad.firebaseapp.com",
+            databaseURL: "https://to-do-list-748ad.firebaseio.com",
+            projectId: "to-do-list-748ad",
+            storageBucket: "to-do-list-748ad.appspot.com",
+            messagingSenderId: "362994011650",
+            appId: "1:362994011650:web:091b79d866083e6afb211b"
+        };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore()
+    db.settings({ timestampsInSnapshots: true })
+    </script>
+
+        <script src="app.js"></script>
+    </body>
+</html>
